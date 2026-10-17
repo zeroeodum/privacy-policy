@@ -17,42 +17,21 @@
 <nav><a href="#ko">한국어</a> · <a href="#en">English</a></nav>
 <section id="ko" lang="ko">
 <h1>회귀 마법사 키우기: 유물 소환 확률</h1>
-<p>유물 소환 1회에 프라그멘타 1개를 쓴다. 프라그멘타는 판을 하면 얻고, 광고로도 받으며, 겜마 1개를 프라그멘타 1개로 바꿀 수 있다. 소환 레벨은 누적 소환 수로 오른다. 여러 번 소환하는 도중 레벨이 오르면 그 뒤 소환부터 다음 레벨의 확률이다. 등급이 정해진 뒤 그 등급의 유물(흔함 4종, 드묾 4종, 귀함 2종, 전설 1종, 신화 1종) 가운데 하나가 같은 확률로 나온다. 소환 1회는 나온 유물의 카드 조각 1개다 (처음 나온 조각은 유물을 열고, 그 뒤 조각은 레벨업에 모인다).</p>
+<p>유물 소환 1회에 프라그멘타 1개를 쓴다. 프라그멘타는 판을 하면 얻고, 광고로도 받으며, 겜마 1개를 프라그멘타 1개로 바꿀 수 있다. 확률은 누적 소환 수와 상관없이 늘 같다. 등급이 정해진 뒤 그 등급의 유물(흔함 4종, 드묾 4종, 귀함 2종, 전설 1종, 신화 1종) 가운데 하나가 같은 확률로 나온다. 소환 1회는 나온 유물의 카드 조각 1개다 (처음 나온 조각은 유물을 열고, 그 뒤 조각은 레벨업에 모인다).</p>
 <h2>등급 확률</h2>
 <div class="wrap"><table>
-<tr><th>소환 레벨</th><th>흔함</th><th>드묾</th><th>귀함</th><th>전설</th><th>신화</th></tr>
-<tr><td>소환 레벨 1 (0+)</td><td>70%</td><td>25%</td><td>4.5%</td><td>0.5%</td><td>0%</td></tr>
-<tr><td>소환 레벨 2 (100+)</td><td>60%</td><td>30%</td><td>8.5%</td><td>1.4%</td><td>0.1%</td></tr>
-<tr><td>소환 레벨 3 (300+)</td><td>50%</td><td>33%</td><td>13%</td><td>3.6%</td><td>0.4%</td></tr>
-<tr><td>소환 레벨 4 (700+)</td><td>40%</td><td>35%</td><td>18%</td><td>6%</td><td>1%</td></tr>
-<tr><td>소환 레벨 5 (1500+)</td><td>32%</td><td>35%</td><td>22%</td><td>9%</td><td>2%</td></tr>
-<tr><td>소환 레벨 6 (3000+)</td><td>25%</td><td>33%</td><td>26%</td><td>12.5%</td><td>3.5%</td></tr>
-<tr><td>소환 레벨 7 (6000+)</td><td>20%</td><td>30%</td><td>29%</td><td>16%</td><td>5%</td></tr>
-<tr><td>소환 레벨 8 (12000+)</td><td>15%</td><td>28%</td><td>31%</td><td>19%</td><td>7%</td></tr>
+<tr><th>구분</th><th>흔함</th><th>드묾</th><th>귀함</th><th>전설</th><th>신화</th></tr>
+<tr><td>모든 소환</td><td>68%</td><td>25%</td><td>5%</td><td>1.6%</td><td>0.4%</td></tr>
 </table></div>
 <h2>천장 소환의 등급 확률 (100회 안에 귀함 이상이 없으면 100번째 소환은 귀함 이상: 그보다 낮은 등급의 몫이 귀함으로 간다)</h2>
 <div class="wrap"><table>
-<tr><th>소환 레벨</th><th>흔함</th><th>드묾</th><th>귀함</th><th>전설</th><th>신화</th></tr>
-<tr><td>소환 레벨 1 (0+)</td><td>0%</td><td>0%</td><td>99.5%</td><td>0.5%</td><td>0%</td></tr>
-<tr><td>소환 레벨 2 (100+)</td><td>0%</td><td>0%</td><td>98.5%</td><td>1.4%</td><td>0.1%</td></tr>
-<tr><td>소환 레벨 3 (300+)</td><td>0%</td><td>0%</td><td>96%</td><td>3.6%</td><td>0.4%</td></tr>
-<tr><td>소환 레벨 4 (700+)</td><td>0%</td><td>0%</td><td>93%</td><td>6%</td><td>1%</td></tr>
-<tr><td>소환 레벨 5 (1500+)</td><td>0%</td><td>0%</td><td>89%</td><td>9%</td><td>2%</td></tr>
-<tr><td>소환 레벨 6 (3000+)</td><td>0%</td><td>0%</td><td>84%</td><td>12.5%</td><td>3.5%</td></tr>
-<tr><td>소환 레벨 7 (6000+)</td><td>0%</td><td>0%</td><td>79%</td><td>16%</td><td>5%</td></tr>
-<tr><td>소환 레벨 8 (12000+)</td><td>0%</td><td>0%</td><td>74%</td><td>19%</td><td>7%</td></tr>
+<tr><th>구분</th><th>흔함</th><th>드묾</th><th>귀함</th><th>전설</th><th>신화</th></tr>
+<tr><td>모든 소환</td><td>0%</td><td>0%</td><td>98%</td><td>1.6%</td><td>0.4%</td></tr>
 </table></div>
 <h2>유물 하나가 나올 확률 (등급 확률 ÷ 그 등급의 유물 수)</h2>
 <div class="wrap"><table>
-<tr><th>소환 레벨</th><th>흔함</th><th>드묾</th><th>귀함</th><th>전설</th><th>신화</th></tr>
-<tr><td>소환 레벨 1 (0+)</td><td>17.5%</td><td>6.25%</td><td>2.25%</td><td>0.5%</td><td>0%</td></tr>
-<tr><td>소환 레벨 2 (100+)</td><td>15%</td><td>7.5%</td><td>4.25%</td><td>1.4%</td><td>0.1%</td></tr>
-<tr><td>소환 레벨 3 (300+)</td><td>12.5%</td><td>8.25%</td><td>6.5%</td><td>3.6%</td><td>0.4%</td></tr>
-<tr><td>소환 레벨 4 (700+)</td><td>10%</td><td>8.75%</td><td>9%</td><td>6%</td><td>1%</td></tr>
-<tr><td>소환 레벨 5 (1500+)</td><td>8%</td><td>8.75%</td><td>11%</td><td>9%</td><td>2%</td></tr>
-<tr><td>소환 레벨 6 (3000+)</td><td>6.25%</td><td>8.25%</td><td>13%</td><td>12.5%</td><td>3.5%</td></tr>
-<tr><td>소환 레벨 7 (6000+)</td><td>5%</td><td>7.5%</td><td>14.5%</td><td>16%</td><td>5%</td></tr>
-<tr><td>소환 레벨 8 (12000+)</td><td>3.75%</td><td>7%</td><td>15.5%</td><td>19%</td><td>7%</td></tr>
+<tr><th>구분</th><th>흔함</th><th>드묾</th><th>귀함</th><th>전설</th><th>신화</th></tr>
+<tr><td>모든 소환</td><td>17%</td><td>6.25%</td><td>2.5%</td><td>1.6%</td><td>0.4%</td></tr>
 </table></div>
 <h2>소환 대상 유물</h2>
 <ul><li>불씨 반지 (흔함)</li><li>황금 동전 (흔함)</li><li>작은 등불 (흔함)</li><li>달 모래시계 (흔함)</li><li>물결 목걸이 (드묾)</li><li>상인의 저울 (드묾)</li><li>깃펜 (드묾)</li><li>씨앗 주머니 (드묾)</li><li>돌 심장 (귀함)</li><li>늑대 송곳니 (귀함)</li><li>시간의 모래 (전설)</li><li>옛 석판 (신화)</li></ul>
@@ -62,42 +41,21 @@
 <hr>
 <section id="en" lang="en">
 <h1>Looping Witch: Relic Summon Rates</h1>
-<p>One summon costs 1 Fragmenta. Fragmenta are earned by playing and from ads, and 1 gem converts to 1 Fragmenta. The summon level rises with total summons; if it rises during a multi-summon, the later summons use the new level. Once the grade is set, each relic of that grade (4 Common, 4 Uncommon, 2 Rare, 1 Legendary, 1 Mythic) is equally likely. Each summon gives one card shard of the relic drawn (the first shard unlocks the relic; later shards go to level-ups).</p>
+<p>One summon costs 1 Fragmenta. Fragmenta are earned by playing and from ads, and 1 gem converts to 1 Fragmenta. The rates are always the same, however many times you summon. Once the grade is set, each relic of that grade (4 Common, 4 Uncommon, 2 Rare, 1 Legendary, 1 Mythic) is equally likely. Each summon gives one card shard of the relic drawn (the first shard unlocks the relic; later shards go to level-ups).</p>
 <h2>Grade odds</h2>
 <div class="wrap"><table>
-<tr><th>Summon level</th><th>Common</th><th>Uncommon</th><th>Rare</th><th>Legendary</th><th>Mythic</th></tr>
-<tr><td>Summon level 1 (0+)</td><td>70%</td><td>25%</td><td>4.5%</td><td>0.5%</td><td>0%</td></tr>
-<tr><td>Summon level 2 (100+)</td><td>60%</td><td>30%</td><td>8.5%</td><td>1.4%</td><td>0.1%</td></tr>
-<tr><td>Summon level 3 (300+)</td><td>50%</td><td>33%</td><td>13%</td><td>3.6%</td><td>0.4%</td></tr>
-<tr><td>Summon level 4 (700+)</td><td>40%</td><td>35%</td><td>18%</td><td>6%</td><td>1%</td></tr>
-<tr><td>Summon level 5 (1500+)</td><td>32%</td><td>35%</td><td>22%</td><td>9%</td><td>2%</td></tr>
-<tr><td>Summon level 6 (3000+)</td><td>25%</td><td>33%</td><td>26%</td><td>12.5%</td><td>3.5%</td></tr>
-<tr><td>Summon level 7 (6000+)</td><td>20%</td><td>30%</td><td>29%</td><td>16%</td><td>5%</td></tr>
-<tr><td>Summon level 8 (12000+)</td><td>15%</td><td>28%</td><td>31%</td><td>19%</td><td>7%</td></tr>
+<tr><th></th><th>Common</th><th>Uncommon</th><th>Rare</th><th>Legendary</th><th>Mythic</th></tr>
+<tr><td>Every summon</td><td>68%</td><td>25%</td><td>5%</td><td>1.6%</td><td>0.4%</td></tr>
 </table></div>
 <h2>Pity summon odds (if no Rare or better appears within 100 summons, the 100th is Rare or better: the lower grades' share moves to Rare)</h2>
 <div class="wrap"><table>
-<tr><th>Summon level</th><th>Common</th><th>Uncommon</th><th>Rare</th><th>Legendary</th><th>Mythic</th></tr>
-<tr><td>Summon level 1 (0+)</td><td>0%</td><td>0%</td><td>99.5%</td><td>0.5%</td><td>0%</td></tr>
-<tr><td>Summon level 2 (100+)</td><td>0%</td><td>0%</td><td>98.5%</td><td>1.4%</td><td>0.1%</td></tr>
-<tr><td>Summon level 3 (300+)</td><td>0%</td><td>0%</td><td>96%</td><td>3.6%</td><td>0.4%</td></tr>
-<tr><td>Summon level 4 (700+)</td><td>0%</td><td>0%</td><td>93%</td><td>6%</td><td>1%</td></tr>
-<tr><td>Summon level 5 (1500+)</td><td>0%</td><td>0%</td><td>89%</td><td>9%</td><td>2%</td></tr>
-<tr><td>Summon level 6 (3000+)</td><td>0%</td><td>0%</td><td>84%</td><td>12.5%</td><td>3.5%</td></tr>
-<tr><td>Summon level 7 (6000+)</td><td>0%</td><td>0%</td><td>79%</td><td>16%</td><td>5%</td></tr>
-<tr><td>Summon level 8 (12000+)</td><td>0%</td><td>0%</td><td>74%</td><td>19%</td><td>7%</td></tr>
+<tr><th></th><th>Common</th><th>Uncommon</th><th>Rare</th><th>Legendary</th><th>Mythic</th></tr>
+<tr><td>Every summon</td><td>0%</td><td>0%</td><td>98%</td><td>1.6%</td><td>0.4%</td></tr>
 </table></div>
 <h2>Chance for one specific relic (grade odds ÷ number of relics of that grade)</h2>
 <div class="wrap"><table>
-<tr><th>Summon level</th><th>Common</th><th>Uncommon</th><th>Rare</th><th>Legendary</th><th>Mythic</th></tr>
-<tr><td>Summon level 1 (0+)</td><td>17.5%</td><td>6.25%</td><td>2.25%</td><td>0.5%</td><td>0%</td></tr>
-<tr><td>Summon level 2 (100+)</td><td>15%</td><td>7.5%</td><td>4.25%</td><td>1.4%</td><td>0.1%</td></tr>
-<tr><td>Summon level 3 (300+)</td><td>12.5%</td><td>8.25%</td><td>6.5%</td><td>3.6%</td><td>0.4%</td></tr>
-<tr><td>Summon level 4 (700+)</td><td>10%</td><td>8.75%</td><td>9%</td><td>6%</td><td>1%</td></tr>
-<tr><td>Summon level 5 (1500+)</td><td>8%</td><td>8.75%</td><td>11%</td><td>9%</td><td>2%</td></tr>
-<tr><td>Summon level 6 (3000+)</td><td>6.25%</td><td>8.25%</td><td>13%</td><td>12.5%</td><td>3.5%</td></tr>
-<tr><td>Summon level 7 (6000+)</td><td>5%</td><td>7.5%</td><td>14.5%</td><td>16%</td><td>5%</td></tr>
-<tr><td>Summon level 8 (12000+)</td><td>3.75%</td><td>7%</td><td>15.5%</td><td>19%</td><td>7%</td></tr>
+<tr><th></th><th>Common</th><th>Uncommon</th><th>Rare</th><th>Legendary</th><th>Mythic</th></tr>
+<tr><td>Every summon</td><td>17%</td><td>6.25%</td><td>2.5%</td><td>1.6%</td><td>0.4%</td></tr>
 </table></div>
 <h2>Relics in the pool</h2>
 <ul><li>Ember Ring (Common)</li><li>Golden Coin (Common)</li><li>Little Lamp (Common)</li><li>Moon Hourglass (Common)</li><li>Tide Pendant (Uncommon)</li><li>Merchant Scales (Uncommon)</li><li>Quill (Uncommon)</li><li>Seed Pouch (Uncommon)</li><li>Stone Heart (Rare)</li><li>Wolf Fang (Rare)</li><li>Sands of Time (Legendary)</li><li>Old Tablet (Mythic)</li></ul>
