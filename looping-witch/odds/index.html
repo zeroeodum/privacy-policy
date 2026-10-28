@@ -17,50 +17,102 @@
 <nav><a href="#ko">한국어</a> · <a href="#en">English</a></nav>
 <section id="ko" lang="ko">
 <h1>회귀 마법사 키우기: 유물 소환 확률</h1>
-<p>유물 소환 1회에 프라그멘타 1개를 쓴다. 프라그멘타는 판을 하면 얻고, 겜마 1개를 프라그멘타 1개로 바꿀 수 있다. 하루 1번 무료 10회 소환과 광고를 보고 하는 30회 소환(하루 3번)도 같은 확률이다. 확률은 소환 횟수에 따라 바뀌지 않는다. 천장 소환만 아래의 천장 확률을 쓴다. 천장 횟수는 무료·광고·프라그멘타 소환을 모두 함께 세고, 귀함 이상이 나오면 0부터 다시 센다. 등급이 정해진 뒤 그 등급의 유물(흔함 4종, 드묾 4종, 귀함 2종, 전설 1종, 신화 1종) 가운데 하나가 같은 확률로 나온다. 소환 1회는 나온 유물의 카드 조각 1개다 (처음 나온 조각은 유물을 열고, 그 뒤 조각은 레벨업에 모인다).</p>
+<p>유물 소환 1회에 프라그멘타 1개를 쓴다. 프라그멘타는 판을 하면 얻고, 겜마 1개를 프라그멘타 1개로 바꿀 수 있다. 하루 1번 무료 10회 소환과 광고를 보고 하는 30회 소환(하루 3번)도 같은 확률이다. 확률은 소환 횟수에 따라 바뀌지 않는다. 천장 소환만 아래의 천장 확률을 쓴다. 천장 횟수는 무료·광고·프라그멘타 소환을 모두 함께 세고, 귀함 이상이 나오면 0부터 다시 센다. 등급이 정해진 뒤 그 등급의 유물(흔함 4종, 드묾 4종, 귀함 2종, 전설 2종, 신화 0종) 가운데 하나가 같은 확률로 나온다. 장비도 등급이 정해진 뒤 그 등급의 장비 가운데 하나가 같은 확률로 나온다. 장비가 나오면 천장 횟수를 0부터 다시 센다. 소환 1회는 나온 유물의 카드 조각 1개다 (처음 나온 조각은 유물을 열고, 그 뒤 조각은 레벨업에 모인다).</p>
+<p>소환 1회는 먼저 장비(10%)인지 유물(90%)인지 정한다. 장비는 판에 끼워야 듣는 상위 물건이다.</p>
 <h2>등급 확률</h2>
 <div class="wrap"><table>
 <tr><th>구분</th><th>흔함</th><th>드묾</th><th>귀함</th><th>전설</th><th>신화</th></tr>
-<tr><td>일반 소환</td><td>68%</td><td>25%</td><td>5%</td><td>1.6%</td><td>0.4%</td></tr>
+<tr><td>일반 소환</td><td>68%</td><td>25%</td><td>5.5%</td><td>1.5%</td><td>0%</td></tr>
+</table></div>
+<h2>장비 안의 등급 확률</h2>
+<div class="wrap"><table>
+<tr><th>구분</th><th>흔함</th><th>드묾</th><th>귀함</th><th>전설</th><th>신화</th></tr>
+<tr><td>일반 소환</td><td>0%</td><td>0%</td><td>70%</td><td>24%</td><td>6%</td></tr>
 </table></div>
 <h2>천장 소환의 등급 확률 (100회 안에 귀함 이상이 없으면 100번째 소환은 귀함 이상: 그보다 낮은 등급의 몫이 귀함으로 간다)</h2>
 <div class="wrap"><table>
 <tr><th>구분</th><th>흔함</th><th>드묾</th><th>귀함</th><th>전설</th><th>신화</th></tr>
-<tr><td>천장 소환</td><td>0%</td><td>0%</td><td>98%</td><td>1.6%</td><td>0.4%</td></tr>
+<tr><td>천장 소환</td><td>0%</td><td>0%</td><td>98.5%</td><td>1.5%</td><td>0%</td></tr>
 </table></div>
-<h2>유물 하나가 나올 확률 (등급 확률 ÷ 그 등급의 유물 수)</h2>
+<h2>물건 하나가 나올 확률 (유물은 90% × 등급 확률 ÷ 그 등급 유물 수, 장비는 10% × 장비 등급 확률 ÷ 그 등급 장비 수)</h2>
 <div class="wrap"><table>
-<tr><th>구분</th><th>흔함</th><th>드묾</th><th>귀함</th><th>전설</th><th>신화</th></tr>
-<tr><td>일반 소환</td><td>17%</td><td>6.25%</td><td>2.5%</td><td>1.6%</td><td>0.4%</td></tr>
-<tr><td>천장 소환</td><td>0%</td><td>0%</td><td>49%</td><td>1.6%</td><td>0.4%</td></tr>
+<tr><th>구분</th><th>일반 소환</th><th>천장 소환</th></tr>
+<tr><td>불씨 반지 (흔함)</td><td>15.3%</td><td>0%</td></tr>
+<tr><td>황금 동전 (흔함)</td><td>15.3%</td><td>0%</td></tr>
+<tr><td>작은 등불 (흔함)</td><td>15.3%</td><td>0%</td></tr>
+<tr><td>달 모래시계 (흔함)</td><td>15.3%</td><td>0%</td></tr>
+<tr><td>물결 목걸이 (드묾)</td><td>5.625%</td><td>0%</td></tr>
+<tr><td>상인의 저울 (드묾)</td><td>5.625%</td><td>0%</td></tr>
+<tr><td>깃펜 (드묾)</td><td>5.625%</td><td>0%</td></tr>
+<tr><td>씨앗 주머니 (드묾)</td><td>5.625%</td><td>0%</td></tr>
+<tr><td>돌 심장 (귀함)</td><td>2.475%</td><td>44.325%</td></tr>
+<tr><td>늑대 송곳니 (귀함)</td><td>2.475%</td><td>44.325%</td></tr>
+<tr><td>시간의 모래 (전설)</td><td>0.675%</td><td>0.675%</td></tr>
+<tr><td>옛 석판 (전설)</td><td>0.675%</td><td>0.675%</td></tr>
+<tr><td>쌍단검 (귀함)</td><td>1.1667%</td><td>1.1667%</td></tr>
+<tr><td>행운 주사위 (귀함)</td><td>1.1667%</td><td>1.1667%</td></tr>
+<tr><td>바람 장화 (귀함)</td><td>1.1667%</td><td>1.1667%</td></tr>
+<tr><td>참나무 방패 (귀함)</td><td>1.1667%</td><td>1.1667%</td></tr>
+<tr><td>날개 샌들 (귀함)</td><td>1.1667%</td><td>1.1667%</td></tr>
+<tr><td>제물 단검 (귀함)</td><td>1.1667%</td><td>1.1667%</td></tr>
+<tr><td>되감기 시계 (전설)</td><td>0.6%</td><td>0.6%</td></tr>
+<tr><td>별 왕관 (전설)</td><td>0.6%</td><td>0.6%</td></tr>
+<tr><td>저주 인형 (전설)</td><td>0.6%</td><td>0.6%</td></tr>
+<tr><td>독수리 눈 (전설)</td><td>0.6%</td><td>0.6%</td></tr>
+<tr><td>심연 나침반 (신화)</td><td>0.3%</td><td>0.3%</td></tr>
+<tr><td>거인의 망치 (신화)</td><td>0.3%</td><td>0.3%</td></tr>
 </table></div>
-<h2>소환 대상 유물</h2>
-<ul><li>불씨 반지 (흔함)</li><li>황금 동전 (흔함)</li><li>작은 등불 (흔함)</li><li>달 모래시계 (흔함)</li><li>물결 목걸이 (드묾)</li><li>상인의 저울 (드묾)</li><li>깃펜 (드묾)</li><li>씨앗 주머니 (드묾)</li><li>돌 심장 (귀함)</li><li>늑대 송곳니 (귀함)</li><li>시간의 모래 (전설)</li><li>옛 석판 (신화)</li></ul>
 <p>같은 유물의 조각 20개가 카드 1장이고, 카드와 아우룸으로 유물의 레벨을 올린다 (확률 없음).</p>
 <p>확률을 바꿀 때는 미리 게임 안과 이 페이지에 알린다.</p>
 </section>
 <hr>
 <section id="en" lang="en">
 <h1>Looping Witch: Relic Summon Rates</h1>
-<p>One summon costs 1 Fragmenta. Fragmenta are earned by playing, and 1 gem converts to 1 Fragmenta. The daily free summon (×10) and ad summons (×30, 3 per day) use the same rates. The rates do not change with the number of summons; only a pity summon uses the pity rates below. The pity count includes free, ad and Fragmenta summons alike and restarts from 0 whenever Rare or better appears. Once the grade is set, each relic of that grade (4 Common, 4 Uncommon, 2 Rare, 1 Legendary, 1 Mythic) is equally likely. Each summon gives one card shard of the relic drawn (the first shard unlocks the relic; later shards go to level-ups).</p>
+<p>One summon costs 1 Fragmenta. Fragmenta are earned by playing, and 1 gem converts to 1 Fragmenta. The daily free summon (×10) and ad summons (×30, 3 per day) use the same rates. The rates do not change with the number of summons; only a pity summon uses the pity rates below. The pity count includes free, ad and Fragmenta summons alike and restarts from 0 whenever Rare or better appears. Once the grade is set, each relic of that grade (4 Common, 4 Uncommon, 2 Rare, 2 Legendary, 0 Mythic) is equally likely; gear works the same way within its own grades. A gear drop restarts the pity count from 0. Each summon gives one card shard of the relic drawn (the first shard unlocks the relic; later shards go to level-ups).</p>
+<p>Each summon first decides gear (10%) or relic (90%). Gear is a higher-tier item that works only when equipped for a run.</p>
 <h2>Grade odds</h2>
 <div class="wrap"><table>
 <tr><th></th><th>Common</th><th>Uncommon</th><th>Rare</th><th>Legendary</th><th>Mythic</th></tr>
-<tr><td>Normal summon</td><td>68%</td><td>25%</td><td>5%</td><td>1.6%</td><td>0.4%</td></tr>
+<tr><td>Normal summon</td><td>68%</td><td>25%</td><td>5.5%</td><td>1.5%</td><td>0%</td></tr>
+</table></div>
+<h2>Gear grade odds</h2>
+<div class="wrap"><table>
+<tr><th></th><th>Common</th><th>Uncommon</th><th>Rare</th><th>Legendary</th><th>Mythic</th></tr>
+<tr><td>Normal summon</td><td>0%</td><td>0%</td><td>70%</td><td>24%</td><td>6%</td></tr>
 </table></div>
 <h2>Pity summon odds (if no Rare or better appears within 100 summons, the 100th is Rare or better: the lower grades' share moves to Rare)</h2>
 <div class="wrap"><table>
 <tr><th></th><th>Common</th><th>Uncommon</th><th>Rare</th><th>Legendary</th><th>Mythic</th></tr>
-<tr><td>Pity summon</td><td>0%</td><td>0%</td><td>98%</td><td>1.6%</td><td>0.4%</td></tr>
+<tr><td>Pity summon</td><td>0%</td><td>0%</td><td>98.5%</td><td>1.5%</td><td>0%</td></tr>
 </table></div>
-<h2>Chance for one specific relic (grade odds ÷ number of relics of that grade)</h2>
+<h2>Chance for one specific item (relic: 90% × grade odds ÷ relics of that grade; gear: 10% × gear grade odds ÷ gear of that grade)</h2>
 <div class="wrap"><table>
-<tr><th></th><th>Common</th><th>Uncommon</th><th>Rare</th><th>Legendary</th><th>Mythic</th></tr>
-<tr><td>Normal summon</td><td>17%</td><td>6.25%</td><td>2.5%</td><td>1.6%</td><td>0.4%</td></tr>
-<tr><td>Pity summon</td><td>0%</td><td>0%</td><td>49%</td><td>1.6%</td><td>0.4%</td></tr>
+<tr><th></th><th>Normal summon</th><th>Pity summon</th></tr>
+<tr><td>Ember Ring (Common)</td><td>15.3%</td><td>0%</td></tr>
+<tr><td>Golden Coin (Common)</td><td>15.3%</td><td>0%</td></tr>
+<tr><td>Little Lamp (Common)</td><td>15.3%</td><td>0%</td></tr>
+<tr><td>Moon Hourglass (Common)</td><td>15.3%</td><td>0%</td></tr>
+<tr><td>Tide Pendant (Uncommon)</td><td>5.625%</td><td>0%</td></tr>
+<tr><td>Merchant Scales (Uncommon)</td><td>5.625%</td><td>0%</td></tr>
+<tr><td>Quill (Uncommon)</td><td>5.625%</td><td>0%</td></tr>
+<tr><td>Seed Pouch (Uncommon)</td><td>5.625%</td><td>0%</td></tr>
+<tr><td>Stone Heart (Rare)</td><td>2.475%</td><td>44.325%</td></tr>
+<tr><td>Wolf Fang (Rare)</td><td>2.475%</td><td>44.325%</td></tr>
+<tr><td>Sands of Time (Legendary)</td><td>0.675%</td><td>0.675%</td></tr>
+<tr><td>Old Tablet (Legendary)</td><td>0.675%</td><td>0.675%</td></tr>
+<tr><td>Twin Daggers (Rare)</td><td>1.1667%</td><td>1.1667%</td></tr>
+<tr><td>Lucky Die (Rare)</td><td>1.1667%</td><td>1.1667%</td></tr>
+<tr><td>Wind Boots (Rare)</td><td>1.1667%</td><td>1.1667%</td></tr>
+<tr><td>Oak Shield (Rare)</td><td>1.1667%</td><td>1.1667%</td></tr>
+<tr><td>Winged Sandals (Rare)</td><td>1.1667%</td><td>1.1667%</td></tr>
+<tr><td>Offering Knife (Rare)</td><td>1.1667%</td><td>1.1667%</td></tr>
+<tr><td>Rewind Clock (Legendary)</td><td>0.6%</td><td>0.6%</td></tr>
+<tr><td>Star Crown (Legendary)</td><td>0.6%</td><td>0.6%</td></tr>
+<tr><td>Curse Doll (Legendary)</td><td>0.6%</td><td>0.6%</td></tr>
+<tr><td>Eagle Eye (Legendary)</td><td>0.6%</td><td>0.6%</td></tr>
+<tr><td>Abyss Compass (Mythic)</td><td>0.3%</td><td>0.3%</td></tr>
+<tr><td>Giant's Hammer (Mythic)</td><td>0.3%</td><td>0.3%</td></tr>
 </table></div>
-<h2>Relics in the pool</h2>
-<ul><li>Ember Ring (Common)</li><li>Golden Coin (Common)</li><li>Little Lamp (Common)</li><li>Moon Hourglass (Common)</li><li>Tide Pendant (Uncommon)</li><li>Merchant Scales (Uncommon)</li><li>Quill (Uncommon)</li><li>Seed Pouch (Uncommon)</li><li>Stone Heart (Rare)</li><li>Wolf Fang (Rare)</li><li>Sands of Time (Legendary)</li><li>Old Tablet (Mythic)</li></ul>
 <p>20 shards of the same relic make 1 card; cards and Aurum level the relic up (no chance involved).</p>
 <p>Changes to these rates are announced in the game and on this page in advance.</p>
 </section>
